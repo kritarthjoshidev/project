@@ -1,0 +1,43 @@
+# Root .gitignore for Task Management App
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables - NEVER commit secrets
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
+backend/.env
+!.env.example
+!**/.env.example
+
+# Build outputs
+dist/
+**/dist/
+build/
+**/build/
+dist-ssr/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# OS
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
